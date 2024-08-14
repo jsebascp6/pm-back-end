@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "holamundo",
+    "database": "pm_backend_db",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "admin",
+    "password": "holamundo",
+    "database": "pm_backend_db",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "admin",
+    "password": "holamundo",
+    "database": "pm_backend_db",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
