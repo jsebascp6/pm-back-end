@@ -1,6 +1,7 @@
-const express = require('express');
+import express from 'express';
+import User from '../models/User.mjs';
+
 const router = express.Router();
-const User = require('../models/User');
 
 // Ruta de registro
 router.post('/register', async (req, res) => {
@@ -37,4 +38,4 @@ router.post('/login', async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

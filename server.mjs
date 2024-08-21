@@ -1,8 +1,9 @@
-require('dotenv').config();
-const express = require('express');
+import 'dotenv/config';
+import express from 'express';
+import userRoutes from './routes/userRoutes.mjs';
+import auth from './middleware/auth.mjs';
+
 const app = express();
-const userRoutes = require('./routes/userRoutes');
-const auth = require('./middleware/auth');
 
 app.use(express.json());
 
@@ -17,3 +18,5 @@ app.get('/api/v1/protected', auth, (req, res) => {
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
+// Exportar la aplicación para las pruebas
+export default app;
