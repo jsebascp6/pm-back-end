@@ -23,6 +23,7 @@
     "sequelize": "^6.37.3"
   },
   "devDependencies": {
+    "chai-as-promised": "^8.0.0",
     "mocha": "^10.7.3",
     "supertest": "^7.0.0"
   }
